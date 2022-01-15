@@ -1,0 +1,249 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+
+    margin: 0;
+   
+}
+nav h3{
+    margin-left:11%;
+}
+
+.first-section{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+   
+}
+.journey-influencer{
+   margin-left: 68px;
+}
+.journey-influencer h1{
+      margin: 5px 0;
+      font-size:40px ;
+}
+#main-camera{
+    height: 94%;
+    width: 66%;
+    transition: all 2s  ease-in-out;
+  
+    
+}
+#main-camera:hover{
+       transform: rotate(45deg); 
+     }
+
+/* preebook button */
+.prebook{
+    
+    text-decoration: none;
+    background-color: DodgerBlue;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 15px; 
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.collection-part{
+   margin: 4% 14%;
+
+}
+#collection-header{
+ text-align: center;
+}
+.collections{
+    /* border:1px solid blue ; */
+   
+    width: 1047px;
+    height: 1662px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+  
+}
+.collection{
+     width: 316px;
+     height: 517px;
+     background-color: white;
+     /* border: 1px solid red; */
+     padding-left: 14px;
+     padding-top:16px ;
+   
+
+    
+}
+.collection img{
+    Width:300px;
+    Height:256px;
+}
+.collection p{
+     margin: 0;
+     color: gray;
+}
+.collection h3{
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+}
+.price{
+     font-weight: 400;
+     font-size: 24px;
+     color: #000000c9 ;
+     margin: 0%;
+}
+.fa-star,.fa-star-half-alt{
+    color:#FB8200
+}
+.collection span{
+    color: gray;
+}
+.see-more{
+  
+   display: grid;
+   justify-content: end;
+   
+  
+}
+.see-more a{
+    text-decoration: none;
+    color: DodgerBlue;
+    cursor: pointer;
+}
+.user{
+    text-align: center;
+}
+.user-exper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.user-exper div{
+      border: 1ps solid white;
+      background-color: white;
+      margin:10px 20px;
+      padding: 10px 15px;
+    
+}
+.user-exper>div>p{
+    color: gray;
+}
+footer{
+     background-color: #000B49;
+     color: white;
+     height: 200px;
+     margin: 0px;
+     text-align: center;
+     
+}
+.fot-div{
+  padding-top: 10px;
+}
+footer > div >h4{
+    text-align: center;
+}
+#all-right-res{
+  text-align: center;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.icons div{
+      margin-left: 10px;
+}
+/*----------------- 
+ Media Queries 
+---------------- */
+/* for ipad */
+
+@media only screen and (max-width:992px) {
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+   }
+   .collections{
+      width: 1047px;
+      height: 2862px;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     row-gap: 40px;
+   }
+   .collection{
+    width: 316px;
+    height: 517px;
+    background-color: white;
+     border: 1px solid red; 
+    padding-left: 14px;
+    padding-top:16px ;
+    
+}
+.see-more{
+    display: grid;
+    justify-content: center;
+    margin-left: 30px;
+   
+ }
+
+     }
+
+/* For Mobile Device */
+
+@media only screen and (max-width:688px) {
+    body{
+        font-family: 'Poppins', sans-serif;
+        background-color: whitesmoke;
+    
+        margin: 0;
+       
+    }
+    
+        .first-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+       }
+       .collections{
+
+        width: 1047px;
+        height: 5662px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       }
+       .user-exper{
+       
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+    #collection-header{
+        text-align:left;
+
+       }
+.see-more{
+   display: grid;
+   justify-content: start;
+   margin-left: 98px;
+  
+}
+nav h3{
+    margin-left:13%;
+} 
+footer{
+    background-color: #000B49;
+    color: white;
+    height: 200px;
+    margin: 0px;
+    text-align: center;
+    
+}
+      
+  }
+  
